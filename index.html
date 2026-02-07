@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Weather Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="card">
+        <div class="top">
+            <h2>🌦 Smart Weather</h2>
+            <button id="modeToggle">🌙</button>
+        </div>
+
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="btn">Get Weather</button>
+
+        <div id="result" class="result"></div>
+        <div id="aiGuide" class="ai-guide"></div>
+
+        <!-- MODE SELECT -->
+        <select id="modeSelect">
+            <option value="travel">✈ Travel Mode</option>
+            <option value="fitness">🏃 Fitness Mode</option>
+            <option value="student">🧑‍🎓 Student Mode</option>
+            <option value="office">🧑‍💼 Office Mode</option>
+            <option value="game">🎮 Gamified Mode</option>
+        </select>
+
+        <div id="modeOutput" class="mode-output"></div>
+
+        <canvas id="forecastChart"></canvas>
+
+        <button id="voiceBtn" class="voice">🔊 Speak Advice</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
